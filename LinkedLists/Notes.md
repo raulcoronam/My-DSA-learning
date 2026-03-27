@@ -47,8 +47,8 @@ while cur:
 
 ### Operaciones Principales
 
-- ***Inserción*** ($O(1)$): Si ya tenemos la referencia al nodo previo, insertar es tan simple como cambiar a dónde apuntan las "flechas". No hay que mover el resto de los elementos (como ocurriría en un array).
-- ***Eliminación*** ($O(1)$): Para borrar el node2, hacemos que node1.next apunte directamente a node3.Comando: node1.next = node1.next.next
+- ***Inserción*** *(O(1)*): Si ya tenemos la referencia al nodo previo, insertar es tan simple como cambiar a dónde apuntan las "flechas". No hay que mover el resto de los elementos (como ocurriría en un array).
+- ***Eliminación*** *(O(1)*): Para borrar el node2, hacemos que node1.next apunte directamente a node3.Comando: node1.next = node1.next.next
 
 - ***Casos Especiales***:
 	- **Circular Linked List**: Ocurre cuando el next del último nodo apunta de regreso al primer nodo (Head) en lugar de a None.
@@ -74,7 +74,7 @@ Para mantener la integridad, siempre debemos actualizar ambos punteros:
 |---------|------------|
 |Insertar al Final|```tail.next = newNode, newNode.prev = tail, tail = newNode```|
 |Borrar al Final|```newTail = tail.prev, newTail.next = None, tail = newTail```|
-|Acceso/Búsqueda|Sigue siendo $O(n)$ porque no hay índices directos.|
+|Acceso/Búsqueda|Sigue siendo *O(n)* porque no hay índices directos.|
 
 ## 4. ***Queues (Colas)***
 
@@ -125,10 +125,10 @@ Se pronuncia "deck". Es una cola híbrida que permite push y pop tanto por el fr
 
 |Operación|Array (Dinámico)|Singly Linked List|Doubly Linked List|
 |:--------|:---------------|:-----------------|:-----------------|
-|Acceso|$O(1)$|$O(n)$|$O(n)$|
-|Búsqueda|$O(n)$|$O(n)$|$O(n)$|
-|Insertar Inicio|$O(n)$|$O(1)$|$O(1)$|
-|Insertar Final|$O(1)$amortizado|$O(1)$(con puntero tail)|$O(1)$|
-|Eliminar Inicio |$O(n)$|$O(1)$|$O(1)$|
+|Acceso|O(1)|O(n)|O(n)|
+|Búsqueda|O(n)|O(n)|O(n)|
+|Insertar Inicio|O(n)|O(1)|O(1)|
+|Insertar Final|O(1) amortizado|O(1) (con puntero tail)|O(1)|
+|Eliminar Inicio |O(n)|O(1)|O(1)|
 
 **Nota Crítica**: Las Linked Lists son superiores en inserciones y eliminaciones frecuentes, pero fallan en acceso aleatorio. Si necesitas leer el elemento en la posición 500 rápidamente, usa un Array. Si necesitas estar metiendo y sacando gente de una fila constantemente, usa una Queue/Linked List.
