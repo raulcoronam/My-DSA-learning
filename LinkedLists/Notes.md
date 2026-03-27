@@ -13,7 +13,7 @@ Un nodo es un objeto que actúa como un contenedor con dos compartimentos:
 
 ### Implementación en Python
 
-´´´Python
+```Python
 
 class ListNode:
     def __init__(self, val):
@@ -29,18 +29,21 @@ node1.next = node2
 node2.next = node3
 # node3.next sigue siendo None, marcando el fin de la lista.
 
+```
+
 ## 2. ***Singly Linked Lists (Listas Simplemente Enlazadas)***
 En esta variante, la navegación es unidireccional (solo hacia adelante).
 
 ### Recorrido (Traversal)
 Para leer una lista, empezamos desde la "Cabeza" (Head) y saltamos de nodo en nodo usando el puntero next hasta llegar a None.
 
-´´´Python
+```Python
 
 cur = node1
 while cur:
     print(cur.val)
     cur = cur.next # Movemos el puntero al siguiente nodo
+```
 
 ### Operaciones Principales
 
@@ -87,7 +90,7 @@ Una Queue es una estructura de datos que sigue el principio FIFO (First In, Firs
 
 Usar una Linked List para una Queue permite que ambas operaciones sean $O(1)$, manteniendo una referencia al inicio (head o left) y al final (tail o right).
 
-´´´Python
+```Python
 
 class Queue:
     def __init__(self):
@@ -112,15 +115,17 @@ class Queue:
             self.right = None
         return val
 
+```
+
 ### ***Variación: Deque (Double-ended Queue)***
 
 Se pronuncia "deck". Es una cola híbrida que permite push y pop tanto por el frente como por el final, todo en tiempo constante $O(1)$. Es ideal para algoritmos de grafos como BFS (Breadth-First Search).
 
 ### 📊 ***Tabla Comparativa de Complejidad (Big O)***
 
-|Operación	|Array (Dinámico)	|Singly Linked List	|Doubly Linked List|
-|---------------------------------------------------------------------------------|
-|Acceso|	$O(1)$|			$O(n)$|			$O(n)$|
+|Operación|Array (Dinámico)|Singly Linked List|Doubly Linked List|
+|----------|---------------------|------------|-----------------|
+|Acceso    |	$O(1)$|	$O(n)$|	$O(n)$|
 |Búsqueda|	$O(n)$|			$O(n)$|			$O(n)$|
 |Insertar Inicio|$O(n)$|		$O(1)$|			$O(1)$|
 |Insertar Final| $O(1)$ amortizado|	$O(1)$ (con puntero tail)|$O(1)$|
