@@ -124,7 +124,7 @@ Se pronuncia "deck". Es una cola híbrida que permite push y pop tanto por el fr
 ### 📊 ***Tabla Comparativa de Complejidad (Big O)***
 
 |Operación|Array (Dinámico)|Singly Linked List|Doubly Linked List|
-|----------|---------------------|------------|-----------------|
+|:--------|:---------------|:-----------------|:-----------------|
 |Acceso|$O(1)$|$O(n)$|$O(n)$|
 |Búsqueda|$O(n)$|$O(n)$|$O(n)$|
 |Insertar Inicio|$O(n)$|$O(1)$|$O(1)$|
