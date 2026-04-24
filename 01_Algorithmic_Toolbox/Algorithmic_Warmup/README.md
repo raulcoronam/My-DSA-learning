@@ -54,7 +54,7 @@ Big-O es la herramienta matemática para clasificar algoritmos según su tasa de
 
 $$f(n) \le c \cdot g(n)$$
 
-*(para todo $n \ge N$)*
+*(para todo $$n \ge N$$)*
 
 * **$f(n)$:** El tiempo real y "sucio" de tu algoritmo (ej. $3n^2 + 50n + 9$).
 * **$g(n)$:** La versión simplificada (ej. $n^2$).
