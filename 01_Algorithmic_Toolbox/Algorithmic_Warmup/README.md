@@ -35,13 +35,15 @@ En algoritmos, nos interesa el **comportamiento a gran escala (Scaling)**.
 ### La falacia de las "Líneas de Código"
 
 # Caso A: 3 líneas, pero LENTO (Cuadrático)
+``` Python
 for i in range(n):
     for j in range(n):
         print(i, j)  # Se ejecuta n*n veces
-
+```
 # Caso B: 1 línea, pero RÁPIDO (Constante)
+``` Python
 result = 500 * 1000  # Se ejecuta 1 vez
-
+```
 > **Lección:** Un bucle for vale por $n$ operaciones. Un bucle anidado vale por $n^2$. No cuentes líneas; cuenta operaciones en función de la entrada $N$.
 
 ## 🅾️ 3. Big-O Notation ($O$)
