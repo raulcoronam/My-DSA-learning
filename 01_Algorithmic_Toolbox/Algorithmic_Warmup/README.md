@@ -116,7 +116,7 @@ En entrevistas o textos académicos verás otros símbolos:
     * Es una garantía. Es la más usada en ingeniería de software.
 * **Big-Omega ($\Omega$): El Suelo (Mejor caso)**
     * "Mi algoritmo tardará al menos esto".
-    * *Ejemplo:* Para encontrar el mínimo en una lista desordenada, al menos debes ver todos los elementos una vez ($\Omega(n)$).
+    * *Ejemplo:* Para encontrar el mínimo en una lista desordenada, al menos debes ver todos los elementos una vez ($$\Omega(n)$$).
 * **Big-Theta ($\Theta$): El Ajuste Exacto**
     * Cuando el techo y el suelo coinciden.
     * "Mi algoritmo siempre se comporta así".
